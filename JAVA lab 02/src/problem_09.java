@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class problem_09 {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+
+        //1 centuries = 100 years = 36524 days = 876581 hours = 52594877 minutes
+
+        int centuries = Integer.parseInt(scan.nextLine());
+        int years = centuries * 100;
+        double days = years * 365.2422;
+        double hours = days * 24;
+        double minutes = hours * 60;
+        System.out.printf("%d centuries = %d years = %.0f days = %.0f hours = %.0f minutes", centuries, years, days, hours, minutes);
+    }
+}
